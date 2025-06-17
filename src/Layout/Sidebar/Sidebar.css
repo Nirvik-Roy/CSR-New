@@ -1,0 +1,61 @@
+.sidebar_wrapper {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top ,var(--sidebar-bg)), url('../../assets/image 8 (1).png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head_wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--white);
+}
+.sidebar_links_wrapper{
+    height: 85dvh;
+    overflow: scroll;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.sidebar_links_wrapper::-webkit-scrollbar{
+    display: none;
+}
+.sidebar_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.sidebar_links_wrapper .active p{
+    font-weight: 800;
+}
+
+.checkmark_img{
+    width: 17px;
+    visibility: hidden;
+}
+.sidebar_link_icon_wrapper .active .checkmark_img{
+    visibility: visible !important;
+}
+.sidebar_link_icon_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+.sidebar_link_icon_wrapper p{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+}

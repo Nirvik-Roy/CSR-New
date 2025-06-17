@@ -1,0 +1,34 @@
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_wrapper h1{
+    font-weight: 500;
+    font-size: 30px;
+}
+.header_img_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+.header_img_name_Wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+.header_img_name_Wrapper p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.header_heading_step_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 50px;
+}
+.step_img{
+    width: 180px;
+}
