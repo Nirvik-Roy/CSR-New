@@ -10,7 +10,7 @@ const Welcome = () => {
         <div className='welcome_wrapper'>
           <div className='universal_container'>
             <div className='welcome_boxs_Wrapper'>
-              <div className='welcome_left'>
+              <div className='center_layout'>
                 <WelcomeQr/>
                <WelcomeApp/>
                <WelcomeThemeChoose/>

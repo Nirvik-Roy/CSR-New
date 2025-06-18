@@ -32,5 +32,14 @@ ul li{
   margin-left: auto;
   padding-left: 25px;
   padding-right: 50px;
-  padding-top: 30px;
+  padding-top: 10px;
+}
+.center_layout{
+  width: 100%;
+  max-width: 74%;
+  min-width: 74%;
+  display: flex;
+ flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
 }

@@ -2,10 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--header-bg);
+    border-radius: 10px
 }
 .header_wrapper h1{
     font-weight: 500;
     font-size: 30px;
+    color: var(--black);
 }
 .header_img_wrapper{
     display: flex;
@@ -22,6 +29,7 @@
 .header_img_name_Wrapper p{
     font-size: 16px;
     font-weight: 600;
+    color: var(--black);
 }
 .header_heading_step_wrapper{
     display: flex;

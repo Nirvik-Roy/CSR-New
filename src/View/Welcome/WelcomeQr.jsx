@@ -1,7 +1,9 @@
 import React from 'react'
 import Button from '../../Components/Button';
-import qr from '../../assets/image 13 (1).png'
+import qr from '../../assets/image 13 (1).png';
+import {useNavigate} from 'react-router-dom'
 const WelcomeQr = () => {
+  const navigate = useNavigate()
   return (
     <>
          <div className='welcome_left_qr_Wrapper'>

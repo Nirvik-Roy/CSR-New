@@ -3,31 +3,84 @@ import './Header.css'
 import Sidebar from '../Sidebar/Sidebar';
 import img from '../../assets/image (44).png'
 import angledown from '../../assets/Vector (3).png'
-import step from '../../assets/Group 72162.png'
-const Header = () => {
+import step from '../../assets/Group 72162.png';
+import step2 from '../../assets/Group 72162 (1).png'
+const Header = ({ welcome, splash }) => {
   return (
     <>
-        <Sidebar/>
-        <div className='universal_container header_wrapper'>
-        <div className='header_heading_step_wrapper'>
-        <h1>Lets’ Build your App in a few clicks</h1>
-        <img className='step_img' src={step}/>
-        </div>
-           
-            <div className='header_img_wrapper'>
+      <Sidebar />
+      <div className='universal_container ' >
+        <div className='header_wrapper' >
+          {welcome && <div className='header_heading_step_wrapper'>
+
+
+            <h1>Lets’ Build your App in a few clicks</h1>
+            <div className='step_img'>
+              <img className='step_img' src={step} />
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+              }}>
+                <small style={{
+                  color: 'var(--black)'
+                }}>Name & Logo</small>
+                <small style={{
+                  color: 'var(--black)'
+                }}>Splash</small>
+              </div>
+            </div>
+
+
+          </div>}
+
+
+          {splash && <>
+
+            <div className='header_heading_step_wrapper'>
+
+
+              <h1>Customise Your App</h1>
+
+
+
+            </div>
+
+            <div className='step_img'>
+              <img className='step_img' src={step2} />
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+              }}>
+                <small style={{
+                  color: 'var(--black)'
+                }}>Name & Logo</small>
+                <small style={{
+                  color: 'var(--black)'
+                }}>Splash</small>
+              </div>
+            </div>
+          </>
+          }
+
+
+          <div className='header_img_wrapper'>
             <div className='header_img_name_Wrapper'>
-            <img style={{
-                width:'50px'
-            }} src={img}/>
-            <p>Natascha Feri</p>
+              <img style={{
+                width: '50px'
+              }} src={img} />
+              <p>Natascha Feri</p>
             </div>
-            
-               <div>
-               <img src={angledown}/>
-               </div>
-         
+
+            <div>
+              <img src={angledown} />
             </div>
+
+          </div>
         </div>
+
+      </div>
     </>
   )
 }
