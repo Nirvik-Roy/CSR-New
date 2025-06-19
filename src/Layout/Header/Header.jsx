@@ -38,12 +38,7 @@ const Header = ({ welcome, splash }) => {
           {splash && <>
 
             <div className='header_heading_step_wrapper'>
-
-
               <h1>Customise Your App</h1>
-
-
-
             </div>
 
             <div className='step_img'>

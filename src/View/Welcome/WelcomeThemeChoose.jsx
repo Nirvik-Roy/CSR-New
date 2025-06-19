@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import RegisterButton from '../../Components/RegisterButton'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 const WelcomeThemeChoose = () => {
    const root = document.documentElement;
    const location = useLocation()
+   const darkMode =  useSelector((state) => state.theme.dark);
+   const dispatch = useDispatch()
+   const navigate = useNavigate()
    const Dark = {
     '--body-color':'#000',
     '--box-white':'#262931',
@@ -104,7 +108,7 @@ useEffect(()=>{
 
                       
                     </div>
-                    <div style={{
+                    <div onClick={(()=>navigate('/welcome/splashscreen'))} style={{
                       width:'150px'
                     }}>
                     <RegisterButton name='Continue'/>
