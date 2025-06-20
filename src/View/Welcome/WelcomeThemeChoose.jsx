@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import RegisterButton from '../../Components/RegisterButton'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { darkTheme, lightTheme } from '../../Stores/Slices/ThemeSlices';
 const WelcomeThemeChoose = () => {
    const root = document.documentElement;
    const location = useLocation()
@@ -45,6 +46,8 @@ const WelcomeThemeChoose = () => {
       darktheme:true,
       lighttheme:false
     })
+
+    dispatch(darkTheme)
    }
    const ChangeLightThemeFunc = () =>{
    Object.entries(Light).forEach((e)=>
@@ -58,6 +61,7 @@ const WelcomeThemeChoose = () => {
   Object.entries(Dark).forEach((e)=>
     root.style.removeProperty(e[0],e[1])
   )
+  dispatch(lightTheme)
   }
 useEffect(()=>{
   if(localStorage.getItem('dark')){
@@ -108,7 +112,7 @@ useEffect(()=>{
 
                       
                     </div>
-                    <div onClick={(()=>navigate('/welcome/splashscreen'))} style={{
+                    <div onClick={(()=>navigate('/splashscreen'))} style={{
                       width:'150px'
                     }}>
                     <RegisterButton name='Continue'/>

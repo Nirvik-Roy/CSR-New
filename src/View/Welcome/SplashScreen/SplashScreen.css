@@ -63,6 +63,11 @@
   border-radius: 10px;
   padding: 15px 25px;
   font-size: 13px;
+  color: var(--black);
+ 
+}
+.splashscreen_tabs h1{
+    color: var(--black);
 }
 .gallery_img_wrapper{
    display: grid;
@@ -87,6 +92,13 @@
     border-radius: 8px 8px 0px 0px;
     border: 1px solid var(--primary-color);
     border-bottom: none;
+    transition: 0.3s linear all;
+    cursor: pointer;
+}
+.tabs_background_padding{
+    padding: 0px 15px 0px 15px;
+    transition: 0.3s linear all;
+    cursor: pointer;
 }
 .image_upload_your_own_wrapper{
     width: 100%;
@@ -264,6 +276,7 @@
     text-align: center;
     font-size: 35px;
     font-weight: 500;
+    color: black;
 }
 .crop_div{
     width: 100%;
@@ -278,22 +291,76 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    
+}
+.crop_div .crop_image_border{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 .reactEasyCrop_CropArea{
-    width: 500px !important;
-    height: 500px !important;
-    border: 15px solid white !important;
-    border-radius: 10px;
-
+    width: 100% !important;
+    height: 700px !important;
+    border: 45px solid white !important;
+    border-radius: 15px;
     position: absolute !important;
     top: 50% !important;
     left: 50% !important; 
     transform: translate(-50% , -50%) scale(0.5) !important;
+    
 }
 .reactEasyCrop_CropArea::before{
     border: none !important;
 }
 .reactEasyCrop_CropArea::after{
     border: none !important;
+}
+.select_size_range_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.select_size_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+    
+}
+.select_size_wrapper p{
+    color: grey;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+.iphone_wrapper h6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 0px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: -8px;
+}
+.iphone_wrapper h6 span img{
+    width: 20px;
+    margin-top: 5px;
+}
+.iphone_wrapper small{
+    color: grey;
+    font-size: 10px;
+    font-weight: 400;
+}
+.select_image_range_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+.select_image_range_wrapper input{
+    width: 200px;
+    accent-color: var(--primary-color);
+    height: 15px;
 }

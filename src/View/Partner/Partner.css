@@ -1,0 +1,122 @@
+.partner_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.partner_logos_wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+}
+.partner_wrapper .center_layout{
+    background-color: var(--box-white);
+    border-radius: 20px;
+    padding: 30px 40px;
+    flex-direction: column;
+}
+.partner_logos_wrapper h3{
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--black);
+}
+.partner_logos_button_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+.partner_logos_button_wrapper button{
+
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.partner_logos_button_wrapper button i{
+    font-size: 15px;
+    margin-right: 10px;
+}
+.partner_logos_wrapper_div{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+}
+.partner_logo_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.partner_logo_main p{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black);
+}
+.partner_logo1{
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.partner_logo1 .partner_logo_img{
+    width: 100%;
+    height: 100%;
+}
+.search_logo_modal_wrappper{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.search_logo_modal{
+    width: 700px;
+    min-height: 50vh;
+    border-radius: 20px;
+    background-color: var(--box-white);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 11;
+    padding: 30px 30px;
+}
+.search_logo_input_div{
+    width: 100%;
+    position: relative;
+}
+.search_logo_input_div input{
+    width: 100%;
+    height: 47px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 35px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    outline: none;
+
+}
+.search_logo_input_div i{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 15px;
+    color: white;
+}
+.modal_partner_logo{
+    height: 120px;
+}

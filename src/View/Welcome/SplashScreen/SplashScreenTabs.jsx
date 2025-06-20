@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import GalleryImage from './GalleryImage'
 import RegisterButton from '../../../Components/RegisterButton'
 import BackButton from '../../../Components/BackButton'
@@ -6,29 +6,57 @@ import UploadImage from './UploadImage'
 import AiTextEditor from './AiTextEditor'
 
 const SplashScreenTabs = () => {
+
+   const [index,setIndex]=useState(0);
+   const [toggle,setToggle] =useState({
+    toggle1:false,
+    toggle2:false,
+    toggle3:false,
+   })
+
+   useEffect(()=>{
+    setToggle({
+        toggle1:index===0 ? true : false,
+        toggle2:index=== 1 ? true : false,
+        toggle3:index === 2 ? true :false,
+    })
+   },[index])
+
     return (
         <>
             <div className='splashscreen_tabs_wrapper'>
-                <div className='tabs_background' >
-                    <div className='splashscreen_tab'>Choose from Library</div>
-                </div>
+                {['Choose from Library', 'Upload Your Own', 'Generate With AI'].map((e, i) => {
+                    return (
+                        <>
+                            <div key={i} className={ i === index ? 'tabs_background' :'tabs_background_padding'} >
+                                <div onClick={(()=>{
+                            
+                                    setIndex(i)
+                                })}
+                                 style={i==index ?  {
+                                    background:'var(--primary-color)',
+                                    color:'white',
+                                    transition:'0.3s linear all'
+                                 }:{
 
-                <div>
-                    <div className='splashscreen_tab'>Upload Your Own</div>
-                </div>
+                                 }}
+                                  className='splashscreen_tab'>{e}</div>
+                            </div>
+                        </>
+                    )
+                })}
 
-                <div>
-                    <div className='splashscreen_tab'>Generate With AI</div>
-                </div>
+
+
 
 
 
             </div>
             <div className='splashscreen_tabs'>
-                {/* <GalleryImage /> */}
-                {/* <UploadImage/> */}
-                <AiTextEditor/>
-                
+              {toggle.toggle1 && <GalleryImage />}
+           { toggle.toggle2 && <UploadImage/>}
+                { toggle.toggle3 && <AiTextEditor />}
+
             </div>
 
             <div className='countiune_back_wrapper' style={{
@@ -39,11 +67,11 @@ const SplashScreenTabs = () => {
             }}>
 
 
-                 <div style={{
+                <div style={{
                     width: '150px'
                 }}>
                     <BackButton name="Back"></BackButton>
-                </div> 
+                </div>
                 <div style={{
                     width: '150px'
                 }}>

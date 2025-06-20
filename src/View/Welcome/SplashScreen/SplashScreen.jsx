@@ -6,7 +6,7 @@ const SplashScreen = () => {
     return (
         <>
         <div style={{
-            paddingBottom:'50px'
+            paddingBottom:'30px'
         }}>
         <div className='universal_container'>
                 <div className='splash_screen_wrapper'>
@@ -21,7 +21,7 @@ const SplashScreen = () => {
                         <div className='select_options_wrapper'>Select One of the Options Below</div>
                         <SplashScreenTabs />
                     </div>
-                    <Phone />
+                    <Phone splash={true} />
                 </div>
             </div>
         </div>

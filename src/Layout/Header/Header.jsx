@@ -5,7 +5,7 @@ import img from '../../assets/image (44).png'
 import angledown from '../../assets/Vector (3).png'
 import step from '../../assets/Group 72162.png';
 import step2 from '../../assets/Group 72162 (1).png'
-const Header = ({ welcome, splash }) => {
+const Header = ({ welcome, splash, partner }) => {
   return (
     <>
       <Sidebar />
@@ -59,6 +59,9 @@ const Header = ({ welcome, splash }) => {
           </>
           }
 
+          {partner && <>
+            <h1>Partner Logos</h1>
+          </>}
 
           <div className='header_img_wrapper'>
             <div className='header_img_name_Wrapper'>

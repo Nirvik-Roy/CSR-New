@@ -126,7 +126,8 @@ const AiTextEditor = () => {
                 })}
             </div>}
             {modalToggle.toggle1 && <ModifyImageModal />}
-            {modalToggle.toggle2 && <CropImageModal/>}
+            {modalToggle.toggle2 && <CropImageModal setmodalToggle={setmodalToggle}/>}
+         
         </>
     )
 }
