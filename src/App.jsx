@@ -12,8 +12,8 @@ import Partner from './View/Partner/Partner'
 import { useDispatch,useSelector } from 'react-redux'
 import { useState,useEffect  } from 'react'
 import { darkTheme, lightTheme } from './Stores/Slices/ThemeSlices';
+import LibraryLogos from './View/Partner/LibraryLogos'
 function App() {
-
    const darkMode =  useSelector((state) => state.theme.darkTheme);
    const lightMode = useSelector((state) => state.theme.lightTheme)
    const dispatch = useDispatch()
@@ -80,7 +80,7 @@ function App() {
                   <Route path='/userUrl' element={<ElserUserUrl />} />
                   <Route path='/splashscreen' element={<SplashScreen />} />
                   <Route path='/partner' element={<Partner/>}/>
-                  
+                  <Route path='/library-logos' element={<LibraryLogos/>}/>
                </Route>
             </Routes>
          </BrowserRouter>

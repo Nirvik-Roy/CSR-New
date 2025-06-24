@@ -4,27 +4,22 @@ import PartnerPhone from '../../Components/PartnerPhone'
 import PartnerLogos from './PartnerLogos'
 import AddLogoModal from './AddLogoModal'
 import { PartnerSearchModal} from './PartnerSearchModal'
-const Partner = () => {
-    const [search, setSearch] = useState(false);
-    const [logoModal,setLogoModal]=useState(false)
-   
-    return (
-        <>
-            {search && <PartnerSearchModal setSearch={setSearch} />}
-            {logoModal && <AddLogoModal logoModal={logoModal} setLogoModal={setLogoModal}/>}
-            <div style={{
+const LibraryLogos = () => {
+  return (
+    <>
+                    <div style={{
                 paddingBottom: '30px'
             }}>
                 <div className='universal_container'>
                     <div className='partner_wrapper'>
                         <div className='center_layout' >
                             <div className='partner_logos_wrapper'>
-                                <h3>Partner Logos</h3>
-                                <div className='partner_logos_button_wrapper'>
+                                <h3>Library Logos</h3>
+                                {/* <div className='partner_logos_button_wrapper'>
                                     <button onClick={(()=>setLogoModal(true))}>+Add Logo</button>
                                     <button onClick={(() => setSearch(true))}><i class="fa-solid fa-magnifying-glass"></i> Search.......</button>
                                     <button>+Choose From My Library</button>
-                                </div>
+                                </div> */}
                             </div>
 
                             <PartnerLogos />
@@ -33,8 +28,8 @@ const Partner = () => {
                     </div>
                 </div>
             </div>
-        </>
-    )
+    </>
+  )
 }
 
-export default Partner
+export default LibraryLogos

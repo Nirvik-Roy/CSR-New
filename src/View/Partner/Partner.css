@@ -120,3 +120,76 @@
 .modal_partner_logo{
     height: 120px;
 }
+.logo_modal_div5652{
+    width: 800px;
+    border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: fit-content;
+    min-height: 70vh;
+    background: linear-gradient(to bottom , var(--linear-color));
+    z-index: 18;
+    padding: 30px 30px;
+}
+.logo_modal_div5652 h1{
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+}
+.logo_add_wrapper45{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.logo_form_left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.logo_img_right{
+    width: 35%;
+    height: 170px;
+    border-radius: 10px;
+}
+.logo_img_right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo_form_input_div{
+    width: 100%;
+}
+.logo_form_input_div label{
+    color: var(--white);
+    display: block;
+    margin-bottom: 10px;
+}
+.logo_form_input_div input{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    color: #000;
+    font-size: 13px;
+    background-color: var(--white);
+    border: none;
+    outline: none;
+}
+.upload_logo_div_56{
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 10px;
+    color: #000;
+    font-size: 13px;
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    column-gap: 8px;
+}
