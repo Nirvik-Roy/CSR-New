@@ -1,4 +1,3 @@
-
 import './App.css'
 import Login from './View/Login/Login'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -14,8 +13,7 @@ import { useState,useEffect  } from 'react'
 import { darkTheme, lightTheme } from './Stores/Slices/ThemeSlices';
 import LibraryLogos from './View/Partner/LibraryLogos'
 function App() {
-   const darkMode =  useSelector((state) => state.theme.darkTheme);
-   const lightMode = useSelector((state) => state.theme.lightTheme)
+   const darkMode = useSelector((state) => state.theme);
    const dispatch = useDispatch()
    const Dark = {
       '--body-color':'#000',
@@ -27,14 +25,14 @@ function App() {
      }
 
      const Light = { 
-      '  --primary-color':'#7C59CA',
+        '--primary-color':'#7C59CA',
         '--secondary-color':'#9D81E0',
         '--linear-color':' #AF91F5,#9D81E0',
         '--black':'#000',
-       ' --body-color':'#f2effa',
+        '--body-color':'#f2effa',
         '--sidebar-bg':'#7c5acbb8',
-       ' --white':'#fff',
-       ' --whitegrey':'#F2F2F2',
+        '--white':'#fff',
+        '--whitegrey':'#F2F2F2',
         '--grey':'#545454',
         '--para-color':'#303968',
         '--header-bg':'#f2effa',
@@ -45,28 +43,31 @@ function App() {
          Object.entries(Dark).forEach((e)=>
            root.style.setProperty(e[0], e[1])
          )
+         document.body.style.backgroundColor = '#000000';
          localStorage.setItem('dark',true);
-      
-         dispatch(darkTheme)
+         dispatch(darkTheme())
         }
+
         const ChangeLightThemeFunc = () =>{
         Object.entries(Light).forEach((e)=>
          root.style.setProperty(e[0],e[1])
        )
+       document.body.style.backgroundColor = '#f2effa';
        localStorage.removeItem('dark')
        Object.entries(Dark).forEach((e)=>
          root.style.removeProperty(e[0],e[1])
        )
-       dispatch(lightTheme)
+       dispatch(lightTheme())
        }
     
        useEffect(()=>{
          if(localStorage.getItem('dark')){
            ChangeDarkThemeFunc()
+      
          }else{
            ChangeLightThemeFunc()
          }
-       },[darkMode,lightMode])
+       },[darkMode])
 
    return (
       <>
