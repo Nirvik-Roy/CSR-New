@@ -12,6 +12,8 @@ import { useDispatch,useSelector } from 'react-redux'
 import { useState,useEffect  } from 'react'
 import { darkTheme, lightTheme } from './Stores/Slices/ThemeSlices';
 import LibraryLogos from './View/Partner/LibraryLogos'
+import CsrModule from './View/CsrModule/CsrModule'
+import Environment from './View/CsrModule/Environment/Environment'
 function App() {
    const darkMode = useSelector((state) => state.theme);
    const dispatch = useDispatch()
@@ -82,6 +84,8 @@ function App() {
                   <Route path='/splashscreen' element={<SplashScreen />} />
                   <Route path='/partner' element={<Partner/>}/>
                   <Route path='/library-logos' element={<LibraryLogos/>}/>
+                  <Route path='/csr-module' element={<CsrModule/>}/>
+                  <Route path='/environment' element={<Environment/>}/>
                </Route>
             </Routes>
          </BrowserRouter>

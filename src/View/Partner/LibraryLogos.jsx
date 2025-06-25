@@ -3,14 +3,27 @@ import './Partner.css'
 import PartnerPhone from '../../Components/PartnerPhone'
 import PartnerLogos from './PartnerLogos'
 import AddLogoModal from './AddLogoModal'
-import { PartnerSearchModal} from './PartnerSearchModal'
+import { PartnerSearchModal} from './PartnerSearchModal';
+import plus from '../../assets/Vector (4).png'
 const LibraryLogos = () => {
   return (
     <>
-                    <div style={{
+        <div style={{
                 paddingBottom: '30px'
             }}>
                 <div className='universal_container'>
+                <input style={{
+                    width:'300px',
+                    height:'40px',
+                    color:'grey',
+                    background:'#F2F2F2',
+                    padding:'0px 10px',
+                    fontSize:'16px',
+                    borderRadius:'5px',
+                    border:'1px solid grey',
+                    outline:'none',
+                    marginBottom:'20px'
+                }} placeholder='Search Logo'/>
                     <div className='partner_wrapper'>
                         <div className='center_layout' >
                             <div className='partner_logos_wrapper'>
@@ -22,7 +35,7 @@ const LibraryLogos = () => {
                                 </div> */}
                             </div>
 
-                            <PartnerLogos />
+                            <PartnerLogos library={true} />
                         </div>
                         <PartnerPhone />
                     </div>

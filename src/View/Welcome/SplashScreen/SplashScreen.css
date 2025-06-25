@@ -143,13 +143,13 @@
     border: 1px solid var(--primary-color);
     overflow: hidden;
 }
-.fr-toolbar.fr-top{
+.ai_text_wrapper .fr-toolbar.fr-top{
     background-color: #F4F4FD !important;
 }
  .fr-float-right{
     display: none !important;
  }
- .fr-float-left:nth-child(3){
+.ai_text_wrapper .fr-float-left:nth-child(3){
   display: none !important;
  }
 

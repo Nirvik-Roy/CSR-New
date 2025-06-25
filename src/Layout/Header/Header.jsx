@@ -5,7 +5,7 @@ import img from '../../assets/image (44).png'
 import angledown from '../../assets/Vector (3).png'
 import step from '../../assets/Group 72162.png';
 import step2 from '../../assets/Group 72162 (1).png'
-const Header = ({ welcome, splash, partner }) => {
+const Header = ({ welcome, splash, partner,module,environment }) => {
   return (
     <>
       <Sidebar />
@@ -61,6 +61,24 @@ const Header = ({ welcome, splash, partner }) => {
 
           {partner && <>
             <h1>Partner Logos</h1>
+          </>}
+
+          {module && <>
+            <h1>CSR Module </h1>
+          </>}
+
+          {environment && <>
+            <h1>Showcase Your CSR & ESG Projects </h1>
+            <div className='step_img'>
+              <img className='step_img' src={step} />
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center'
+              }}>
+            
+              </div>
+            </div>
           </>}
 
           <div className='header_img_wrapper'>

@@ -87,7 +87,7 @@ const AiTextEditor = () => {
                     fontSize: '22px',
                     fontWeight: '500'
                 }}>Describe Your Own Image </h1>
-                <div style={{
+                <div className='ai_text_wrapper' style={{
                     width: '100%',
                     marginTop: '20px',
                     marginBottom: '20px'

@@ -7,8 +7,15 @@ import applogo from '../assets/app-logo.png'
 const Phone = ({welcome,elseUrl,splash}) => {
   return (
     <>
-        <div className={splash ? 'splash_phone' :'phone_div'}>
-            <div className='phone_head'></div>
+        <div style={splash ?{
+            display:'flex',
+            flexDirection:'column',
+            rowGap:'50px'
+        }:{}} className='phone_div'>
+        <div className='phone_head_wrapper'>
+        <div className='phone_head'></div>
+        </div>
+          
 
             {welcome  && <img style={{
                 width:'150px'
@@ -35,11 +42,7 @@ const Phone = ({welcome,elseUrl,splash}) => {
             <h2>Welcome to
             CSR APP</h2>
             </> 
-            
-          
             }
-
-
         </div>
         
     </>

@@ -55,7 +55,7 @@ const Sidebar = () => {
 
 
 
-                <NavLink to='/' className='sidebar_link'>
+                <NavLink to='/csr-module' className='sidebar_link'>
                 <div className='sidebar_link_icon_wrapper'>
                 <img style={{
                     width:'19px'

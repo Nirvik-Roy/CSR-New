@@ -5,7 +5,9 @@ import img3 from '../../assets/image (56).png'
 import img4 from '../../assets/image (57).png'
 import medal from '../../assets/image 18.png'
 import RegisterButton from '../../Components/RegisterButton'
-const PartnerLogos = () => {
+import plus from '../../assets/Vector (4).png'
+import LibraryLogos from './LibraryLogos'
+const PartnerLogos = ({library}) => {
 
    
     return (
@@ -17,14 +19,14 @@ const PartnerLogos = () => {
                             <div key={i} className='partner_logo_main'>
                                 <div className='partner_logo1'>
                                     <img className='partner_logo_img' src={e} />
-                                    <img style={{
+                                 {!library &&   <img style={{
                                         width:'45px',
                                         position:'absolute',
                                         top:'10px',
                                         left:'10px'
-                                    }} src={medal} />
+                                    }} src={medal} />}
 
-                                    <div style={{
+                                   { !library && <div style={{
                                         display:'flex',
                                         justifyContent:'flex-start',
                                         alignItems:'center',
@@ -38,7 +40,14 @@ const PartnerLogos = () => {
                                     }}>
                                     <i class="fa-solid fa-pen-to-square"></i>
                                     <i class="fa-solid fa-trash"></i>
-                                    </div>
+                                    </div>}
+
+                                   {library && <img style={{
+                                        position:'absolute',
+                                        top:'10px',
+                                        right:'10px',
+                                        zIndex:'10'
+                                    }} src={plus}/>}
                                 </div>
                                 <p>Company Logo</p>
                             </div>
