@@ -6,11 +6,12 @@ const MainLayout = () => {
   const SplashRoutes = ['/splashscreen'];
   const PartnerRoutes = ['/partner','/library-logos'];
   const CsrModuleRoutes =['/csr-module'];
-  const EnvironmentRoutes = ['/environment',]
+  const EnvironmentRoutes = ['/environment',];
+  const ModuleHighlightRoutes = ['/module-highlight'];
   const location = useLocation()
   return (
     <>
-        <Header environment = {EnvironmentRoutes.includes(location.pathname) && true} module={CsrModuleRoutes.includes(location.pathname) && true} partner={PartnerRoutes.includes(location.pathname) && true} splash={SplashRoutes.includes(location.pathname) && true} welcome={WelcomeRoutes.includes(location.pathname) && true}/>
+        <Header moduleHighlight={ModuleHighlightRoutes.includes(location.pathname) && true} environment = {EnvironmentRoutes.includes(location.pathname) && true} module={CsrModuleRoutes.includes(location.pathname) && true} partner={PartnerRoutes.includes(location.pathname) && true} splash={SplashRoutes.includes(location.pathname) && true} welcome={WelcomeRoutes.includes(location.pathname) && true}/>
         <Outlet/>
     </>
   )

@@ -14,6 +14,7 @@ import { darkTheme, lightTheme } from './Stores/Slices/ThemeSlices';
 import LibraryLogos from './View/Partner/LibraryLogos'
 import CsrModule from './View/CsrModule/CsrModule'
 import Environment from './View/CsrModule/Environment/Environment'
+import ModuleHighlight from './View/CsrModule/ModuleHighlight/ModuleHighlight'
 function App() {
    const darkMode = useSelector((state) => state.theme);
    const dispatch = useDispatch()
@@ -86,6 +87,7 @@ function App() {
                   <Route path='/library-logos' element={<LibraryLogos/>}/>
                   <Route path='/csr-module' element={<CsrModule/>}/>
                   <Route path='/environment' element={<Environment/>}/>
+                  <Route path='/module-highlight' element={<ModuleHighlight/>}/>
                </Route>
             </Routes>
          </BrowserRouter>

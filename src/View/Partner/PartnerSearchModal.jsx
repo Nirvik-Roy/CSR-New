@@ -5,14 +5,15 @@ import img4 from '../../assets/image (57).png'
 import medal from '../../assets/image 18.png'
 import RegisterButton from '../../Components/RegisterButton'
 import ModalButton from '../../Components/ModalButton'
+import plus from '../../assets/Vector (4).png'
 
-export const PartnerSearchModal = ({setSearch}) => {
+ const PartnerSearchModal = ({setSearch,environment}) => {
     return (
         <>
             <div className='search_logo_modal_wrappper' onClick={(() => { setSearch(false) })}></div>
             <div className='search_logo_modal'>
                 <div className='search_logo_input_div'>
-                    <input placeholder='Search...' defaultValue={'Birds'} />
+                    <input placeholder='Search...' defaultValue={environment ? 'Sample Partner Company Name':'Birds'} />
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
@@ -45,7 +46,12 @@ export const PartnerSearchModal = ({setSearch}) => {
                                             right: '10px',
                                             cursor: 'pointer'
                                         }}>
-                                            <i class="fa-regular fa-circle-xmark"></i>
+                                           {environment ? <img style={{
+                                            position:'absolute',
+                                            top:'0px',
+                                            right:'0px',
+                                            width:'20px'
+                                           }} src={plus}/> : <i class="fa-regular fa-circle-xmark"></i>}
 
                                         </div>
                                     </div>
@@ -66,3 +72,5 @@ export const PartnerSearchModal = ({setSearch}) => {
         </>
     )
 }
+
+export default PartnerSearchModal

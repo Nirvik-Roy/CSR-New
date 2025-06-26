@@ -1,0 +1,65 @@
+.module_phone_content_wrapper{
+    width: 100%;
+    height: 100%;
+}
+.module_img_wrapper{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.module_phone_head_wrapper{
+    padding: 30px 15px 20px 15px;
+    color: #fff;
+    display: flex;
+    column-gap: 8px;
+}
+.module_phone_head_wrapper h6{
+    font-weight: 300;
+}
+.iwokrama_highlights_wrapper{
+    width: 98%;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px 0px;
+    margin-inline: auto;
+}
+.iwokrama_highlights_wrapper h6{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 0px !important;
+}
+.iwokrams_high_boxex_Wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-top: 10px;
+}
+.iwokrama_box{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+.iwokrama_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8E5A0;
+}
+.iwokrama_img img{
+    width: 25px;
+}
+.iwokrama_box p{
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+}

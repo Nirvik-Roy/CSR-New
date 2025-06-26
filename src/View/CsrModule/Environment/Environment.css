@@ -133,3 +133,74 @@ input[type='time']::-webkit-calendar-picker-indicator {
     margin-top: 4px;
     color: var(--black);
 }
+.fund_raise_modal_wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 12;
+    width: 100%;
+}
+.fund_raise_modal{
+    width: 600px;
+    height: fit-content;
+    padding: 30px 20px;
+    height: 40vh;
+    border-radius: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 13;
+    background:linear-gradient(to top left ,var(--linear-color) ) ;
+}
+.fund_raise_modal h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+.fund_raise_input_Wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.fund_raise_input_Wrapper .fund_raise_input_div{
+    width: 48%;
+    position: relative;
+}
+.fund_raise_input_div label{
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 8px;
+}
+.fund_raise_input_div input{
+    width: 100%;
+    background-color: #fff;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+   padding: 0px 10px;
+}
+.fund_raise_input_div select{
+    width: 100%;
+    background-color: #fff;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+    --webkit-apperance:none;
+    padding: 0px 10px;
+}
+.fund_raise_input_div i{
+    position: absolute;
+    top: 43px;
+    right: 10px;
+    color: grey;
+    font-size: 12px;
+}

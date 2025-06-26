@@ -3,7 +3,6 @@ import './Partner.css'
 import PartnerPhone from '../../Components/PartnerPhone'
 import PartnerLogos from './PartnerLogos'
 import AddLogoModal from './AddLogoModal'
-import { PartnerSearchModal} from './PartnerSearchModal';
 import plus from '../../assets/Vector (4).png'
 const LibraryLogos = () => {
   return (

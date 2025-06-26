@@ -5,7 +5,7 @@ import img from '../../assets/image (44).png'
 import angledown from '../../assets/Vector (3).png'
 import step from '../../assets/Group 72162.png';
 import step2 from '../../assets/Group 72162 (1).png'
-const Header = ({ welcome, splash, partner,module,environment }) => {
+const Header = ({ welcome, splash, partner,module,environment,moduleHighlight }) => {
   return (
     <>
       <Sidebar />
@@ -65,6 +65,11 @@ const Header = ({ welcome, splash, partner,module,environment }) => {
 
           {module && <>
             <h1>CSR Module </h1>
+          </>}
+
+
+          {moduleHighlight && <>
+            <h1>Module Highlight </h1>
           </>}
 
           {environment && <>

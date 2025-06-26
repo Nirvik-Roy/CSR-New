@@ -3,7 +3,7 @@ import './Partner.css'
 import PartnerPhone from '../../Components/PartnerPhone'
 import PartnerLogos from './PartnerLogos'
 import AddLogoModal from './AddLogoModal'
-import { PartnerSearchModal} from './PartnerSearchModal'
+import PartnerSearchModal from './PartnerSearchModal'
 import { useNavigate } from 'react-router-dom'
 const Partner = () => {
     const [search, setSearch] = useState(false);

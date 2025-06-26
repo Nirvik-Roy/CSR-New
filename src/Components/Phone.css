@@ -13,6 +13,7 @@
     align-items: center;
     overflow: hidden;
     overflow-y: scroll;
+    cursor:grab
 }
 .phone_head_wrapper{
    position:fixed;
