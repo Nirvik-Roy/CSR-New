@@ -1,0 +1,55 @@
+.booking_details_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    min-height: 80vh;
+}
+.csr_hospital_wrapper{
+    background-color: var(--box-white);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+}
+.csr_hospital_hed_Wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.csr_hospital_hed_Wrapper h1{
+    color: var(--black);
+    font-weight: 600;
+    font-size: 21px;
+}
+.csr_hospital_cards_wrapper{
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 20px;
+}
+.csr_hospital_card{
+    height: fit-content;
+    min-height: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content:end ;
+    flex-direction: column;
+}
+.csr_hospital_card p{
+    color: #fff;
+    z-index: 9;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 10px;
+    background-color: rgba(0, 0, 0, 0.461);
+    backdrop-filter: blur(10px);
+}
+.csr_hospital_card img{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

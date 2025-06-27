@@ -15,6 +15,8 @@ import LibraryLogos from './View/Partner/LibraryLogos'
 import CsrModule from './View/CsrModule/CsrModule'
 import Environment from './View/CsrModule/Environment/Environment'
 import ModuleHighlight from './View/CsrModule/ModuleHighlight/ModuleHighlight'
+import BookingDetails from './View/CsrModule/BookingDetails/BookingDetails'
+import HotelBooking from './View/CsrModule/HotelBooking/HotelBooking'
 function App() {
    const darkMode = useSelector((state) => state.theme);
    const dispatch = useDispatch()
@@ -88,6 +90,8 @@ function App() {
                   <Route path='/csr-module' element={<CsrModule/>}/>
                   <Route path='/environment' element={<Environment/>}/>
                   <Route path='/module-highlight' element={<ModuleHighlight/>}/>
+                  <Route path='/booking-details' element={<BookingDetails/>}/>
+                  <Route path='/hotel-booking' element={<HotelBooking/>}/>
                </Route>
             </Routes>
          </BrowserRouter>

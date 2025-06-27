@@ -14,6 +14,7 @@ import img2 from '../../../assets/image (49).png'
 import img3 from '../../../assets/image (50).png';
 import modifyImage from '../../../assets/Group 1171277288.png'
 import CropImageModal from './CropImageModal';
+import TextEditor from '../../../Components/TextEditor/TextEditor';
 const AiTextEditor = () => {
     const [loader, setLoader] = useState(false);
     const [aiImages, setaiImages] = useState(false);
@@ -80,27 +81,14 @@ const AiTextEditor = () => {
     }
     return (
         <>
-        
+
             {loader && <LoaderModal />}
             {!aiImages && <>
                 <h1 style={{
                     fontSize: '22px',
                     fontWeight: '500'
                 }}>Describe Your Own Image </h1>
-                <div className='ai_text_wrapper' style={{
-                    width: '100%',
-                    marginTop: '20px',
-                    marginBottom: '20px'
-                }}>
-                    <FroalaEditorComponent
-                        tag="textarea"
-                        config={config}
-                    />
-
-                    {/* <FroalaEditorView   
-    model={this.state.content}
-    /> */}
-                </div>
+                <TextEditor />
 
                 <div onClick={Timer} style={{
                     width: '150px',
@@ -126,8 +114,8 @@ const AiTextEditor = () => {
                 })}
             </div>}
             {modalToggle.toggle1 && <ModifyImageModal />}
-            {modalToggle.toggle2 && <CropImageModal setmodalToggle={setmodalToggle}/>}
-         
+            {modalToggle.toggle2 && <CropImageModal setmodalToggle={setmodalToggle} />}
+
         </>
     )
 }

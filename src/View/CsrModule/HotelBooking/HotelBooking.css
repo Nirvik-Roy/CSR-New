@@ -1,0 +1,100 @@
+.hotel_booking_content_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.hotel_booking_form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+}
+.hotel_booking_form_wrapper {
+    padding: 30px;
+    background-color: var(--box-white);
+    border-radius: 20px;
+    width: 100%;
+}
+.hotel_form_input_div {
+    width: 80%;
+}
+
+.hotel_form_input_div input {
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #000;
+    outline: none;
+    padding: 0px 12px;
+}
+.hotel_form_input_div select {
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #000;
+    outline: none;
+    padding: 0px 12px;
+    appearance: none;
+    --webkit-appearance:none;
+}
+.hotel_form_input_div input::placeholder{
+    color: #777777;
+    font-weight: 400;
+}
+.hotel_form_input_div label {
+    color: var(--black);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: Poppins;
+}
+.hotel_form_input_div label img{
+    width: 22px;
+    cursor: pointer;
+}
+.hotel_form_input_div .ai_text_wrapper{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.hotel_form_input_div .fr-box.fr-basic .fr-element{
+    min-height: 150px !important;
+}
+.hotel_form_input_div .ai_text_wrapper .fr-toolbar.fr-top{
+    background-color: transparent !important;
+}
+.hotel_form_input_div .fr-float-left:nth-child(2){
+    display: none !important;
+}
+.two_inputs_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.two_inputs_wrapper .hotel_form_input_div{
+    width: 49%;
+}
+.hotel_booking_form .createProject_div{
+    padding: 0px;
+}
+.hotel_form_checkbox_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+.hotel_form_checkbox_wrapper input{
+    width: 38px;
+    height: 38px;
+    accent-color: var(--primary-color);
+}
+.hotel_booking_form .back_button{
+    border: 1px solid var(--primary-color);
+}

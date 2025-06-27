@@ -5,7 +5,10 @@ import img from '../../assets/image (44).png'
 import angledown from '../../assets/Vector (3).png'
 import step from '../../assets/Group 72162.png';
 import step2 from '../../assets/Group 72162 (1).png'
-const Header = ({ welcome, splash, partner,module,environment,moduleHighlight }) => {
+import RegisterButton from '../../Components/RegisterButton';
+const Header = ({ welcome, splash, partner,
+  module,environment,moduleHighlight,
+  bookingdetails,hotelbooking }) => {
   return (
     <>
       <Sidebar />
@@ -70,6 +73,15 @@ const Header = ({ welcome, splash, partner,module,environment,moduleHighlight })
 
           {moduleHighlight && <>
             <h1>Module Highlight </h1>
+          </>}
+
+          {bookingdetails && <>
+            <h1>Booking Details</h1>
+          </>}
+
+          {hotelbooking && <>
+            <h1>Hotels</h1>
+          
           </>}
 
           {environment && <>
