@@ -17,6 +17,9 @@
     font-weight: 500;
     font-size: 25px;
 }
+.csr_pillar_header_wrapper h2{
+    color: var(--black);
+}
 .csr_pillars_cards_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

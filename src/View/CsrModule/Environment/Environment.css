@@ -36,7 +36,7 @@
 }
 .project_input_div label{
     margin-bottom: 8px;
-    color: #666666eb;
+    color: var(--black);
     display: block;
 }
 .project_input_div input{
@@ -203,4 +203,7 @@ input[type='time']::-webkit-calendar-picker-indicator {
     right: 10px;
     color: grey;
     font-size: 12px;
+}
+.environment_wrapper h3{
+    color: var(--black);
 }
